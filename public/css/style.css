@@ -82,6 +82,32 @@ a {
   flex-direction: column;
   margin-top: 1em;
 }
+.main__realisation--sub {
+  font-family: "Lobster", cursive;
+  margin-bottom: 0.5em;
+}
+.main__realisation--menu {
+  display: flex;
+  flex-direction: column;
+}
+.main__realisation--link {
+  margin-bottom: 0.7em;
+  position: relative;
+}
+.main__realisation--link:hover {
+  color: #11999e;
+}
+.main__realisation--link:hover::after {
+  content: "";
+  padding: 0.7rem;
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 5em;
+  border-bottom: 3px solid #11999e;
+}
 .main__realisation--title {
   position: relative;
   margin-bottom: 0.3em;
@@ -162,6 +188,7 @@ a {
 .main__follow--links {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .main__follow--links .link {
   display: flex;
