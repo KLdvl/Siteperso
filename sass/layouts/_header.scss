@@ -1,0 +1,23 @@
+.diagonalBox {
+  background-image: linear-gradient(45deg, $secondary, $quaternary);
+  clip-path: polygon(0 0, 100% 0, 100% 60%, 0 100%);
+  height: 15em;
+}
+.header {
+  max-width: 50em;
+  margin: auto;
+  @include flexcenter;
+  flex-direction: column;
+  &__title {
+    margin-top: 1em;
+    font-weight: 400;
+    color: $primary;
+  }
+  &__text {
+    font-family: $font-logo;
+    font-size: 2rem;
+    transform: skewY(-2deg);
+    color: $primary;
+    max-width: 80%;
+  }
+}

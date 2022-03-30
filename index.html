@@ -4,104 +4,194 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./public/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>Kevin Mas, Web Developpeur</title>
   </head>
   <body>
-    <header>
-      <h1>Kevin MAS</h1>
-      <p>Développeur Web</p>
-    </header>
-    <main>
-      <section>
-        <h2>Faisons connaissance :</h2>
-        <p>
-          Je suis un développeur web français en train de finaliser ma formation
-          chez OpenClassrooms. Je passe beaucoup de mon temps libre à
-          approfondir mes connaissances et à coder. Je suis toujours en quête
-          d'amélioration et d'efficacité dans mon travail. Passionné
-          d'informatique depuis mon plus jeune âge, c'est tout naturellement que
-          j'ai opté pour une reconversion professionnelle dans le développement
-          Web après avoir exercé comme ingénieur du son pendant 10 ans et
-          infirmier pendant 6 ans. J'ai d'ores et déjà commencé à élargir mes
-          compétences pour dans un futur proche avoir un grade de développeur
-          front-end. J'ai également comme objectif l'apprentissage de la partie
-          back-end afin d'être le plus polyvalent possible.
-        </p>
-      </section>
-      <section>
-        Aperçu de mes réalisations
-        <a href="#">Projets réalisés lors de la formation OpenClassrooms</a>
-        <a href="#">Projets réalisés à titre personnel</a>
-      </section>
-      <section>
-        <h2>Mon parcours de formation</h2>
-        <ul>
-          <li>
-            <span class="date">2020</span>
-            <span class="text"
-              >Projet de développement de site internet basé sur Drupal / Vue.js
-              (en cours de développement)</span
-            >
-          </li>
-          <li>
-            <span class="date">2021</span>
-            <span class="text">Suivi de cours sur Udemy / Vue Mastery</span>
-          </li>
-          <li>
-            <span class="date">06/12/2021</span>
-            <span class="text">Premiers cours suivis chez OpenClassrooms</span>
-          </li>
-          <li>
-            <span class="date">12/02/2022</span>
-            <span class="text">Entrée en formation chez OpenClassrooms</span>
-          </li>
-          <li>
-            <span class="date">19/03/2022</span>
-            <span class="text"
-              >Création de mon entreprise individuelle de développement
-              Web</span
-            >
-          </li>
-        </ul>
-      </section>
-      <section>
-        <h2>Les logiciels et langages que je maîtrise</h2>
-        <p>
-          Passionné depuis de nombreuses années et ayant vu le développement des
-          PC et du Web. J'ai appris à travailler efficacement avec
-          <strong>Sass</strong>. J'ai commencé à me former à
-          <strong>Vue.js</strong> grâce à de nombreuses ressources en ligne.
-          J'ai également des bases en <strong>Node.js</strong>. J'ai acquis une
-          solide connaissance en <strong>Photoshop</strong>.
-        </p>
-        <p>
-          Dans un futur proche, je souhaite me former au développement avec
-          <strong>React</strong> et <strong>React Native</strong> pour le
-          développement mobile. J'ai commencé à m'intéresser au back-end et à
-          moyen terme, je voudrais développer mes connaissances avec
-          <strong>PHP</strong> et un framework comme <strong>Laravel</strong> ou
-          <strong>Symfony</strong>.
-        </p>
-      </section>
-      <section>
-        <h2>Si vous souhaitez me suivre !</h2>
-        <a href="">Github</a>
-        <a href="">LinkedIn</a>
-        <a href="">Twitter</a>
-        <a href="">Malt</a>
-        <a href="">Upwork</a>
-        <a href="">fiverr</a>
-        <a href="">maskevin.w@gmail.com</a>
-      </section>
-      <section>
-        <h2>Contactez-moi</h2>
-        <label for="email">Votre adresse E-mail</label>
-        <input type="email" name="" id="email" />
-        <label for="message">Votre message</label>
-        <input type="text" name="" id="message" />
-        <input type="submit" value="Envoyer mon message" />
-      </section>
-    </main>
+    <div class="wrap">
+      <div class="diagonalBox">
+        <header class="header">
+          <h1 class="header__title">Kevin MAS</h1>
+          <p class="header__text">
+            Développeur Web basé dans le sud de la France.
+          </p>
+        </header>
+      </div>
+
+      <main class="main">
+        <section class="main__presentation">
+          <h2 class="main__presentation--title">Faisons connaissance :</h2>
+          <p class="main__presentation--text">
+            Je suis un développeur web français en train de finaliser ma
+            formation chez OpenClassrooms. Je passe beaucoup de mon temps libre
+            à approfondir mes connaissances et à coder. Je suis toujours en
+            quête d'amélioration et d'efficacité dans mon travail.<br /><br />Passionné
+            d'informatique depuis mon plus jeune âge, c'est tout naturellement
+            que j'ai opté pour une reconversion professionnelle dans le
+            développement Web après avoir exercé comme ingénieur du son pendant
+            10 ans et infirmier pendant 6 ans.<br />
+            <br />J'ai d'ores et déjà commencé à élargir mes compétences pour
+            dans un futur proche avoir un grade de développeur front-end. J'ai
+            également comme objectif l'apprentissage de la partie back-end afin
+            d'être le plus polyvalent possible.
+          </p>
+        </section>
+        <section class="main__realisation">
+          <h2 class="main__realisation--title">Aperçu de mes réalisations</h2>
+          <a href="#" class="main__realisation--link"
+            >Projets réalisés lors de la formation OpenClassrooms</a
+          >
+          <a href="#" class="main__realisation--link"
+            >Projets réalisés à titre personnel</a
+          >
+        </section>
+        <section class="main__formation">
+          <h2 class="main__formation--title">Mon parcours de formation</h2>
+          <ul class="list">
+            <li class="list__item">
+              <span class="list__item--date">2020</span>
+              <span class="list__item--icon"
+                ><i class="fa-solid fa-code"></i
+              ></span>
+              <span class="list__item--text"
+                >Projet de développement de site internet basé sur Drupal /
+                Vue.js (en cours de développement)</span
+              >
+            </li>
+            <li class="list__item">
+              <span class="list__item--date">2021</span>
+              <span class="list__item--icon"
+                ><i class="fa-solid fa-school"></i
+              ></span>
+              <span class="list__item--text"
+                >Suivi de cours sur Udemy / Vue Mastery</span
+              >
+            </li>
+            <li class="list__item">
+              <span class="list__item--date">06/12/2021</span>
+              <span class="list__item--icon"
+                ><i class="fa-solid fa-school"></i
+              ></span>
+              <span class="list__item--text"
+                >Premiers cours suivis chez OpenClassrooms</span
+              >
+            </li>
+            <li class="list__item">
+              <span class="list__item--date">12/02/2022</span>
+              <span class="list__item--icon"
+                ><i class="fa-solid fa-school"></i
+              ></span>
+              <span class="list__item--text"
+                >Entrée en formation chez OpenClassrooms</span
+              >
+            </li>
+            <li class="list__item">
+              <span class="list__item--date">19/03/2022</span>
+              <span class="list__item--icon"
+                ><i class="fa-solid fa-building"></i
+              ></span>
+              <span class="list__item--text"
+                >Création de mon entreprise individuelle de développement
+                Web</span
+              >
+            </li>
+
+            <li class="list__item">
+              <span class="list__item--date">25/03/2022</span>
+              <span class="list__item--icon"
+                ><i class="fa-solid fa-school"></i
+              ></span>
+              <span class="list__item--text"
+                >Début de formation chez FreeCodeCamp</span
+              >
+            </li>
+          </ul>
+        </section>
+        <section class="main__masteries">
+          <h2 class="main__masteries--title">
+            Les logiciels et langages que je maîtrise
+          </h2>
+          <p class="main__masteries--text">
+            Passionné depuis de nombreuses années et ayant vu le développement
+            des PC et du Web. J'ai appris à travailler efficacement avec
+            <strong class="strong">Sass</strong>. J'ai commencé à me former à
+            <strong class="strong">Vue.js</strong> grâce à de nombreuses
+            ressources en ligne. J'ai également des bases en
+            <strong class="strong">Node.js</strong>. J'ai acquis une solide
+            connaissance en <strong class="strong">Photoshop</strong>.
+          </p>
+          <br />
+          <p class="main__masteries--text">
+            Dans un futur proche, je souhaite me former au développement avec
+            <strong class="strong">React</strong> et
+            <strong class="strong">React Native</strong> pour le développement
+            mobile. J'ai commencé à m'intéresser au back-end et à moyen terme,
+            je voudrais développer mes connaissances avec
+            <strong class="strong">PHP</strong> et un framework comme
+            <strong class="strong">Laravel</strong> ou
+            <strong class="strong">Symfony</strong>.
+          </p>
+        </section>
+        <section class="main__follow">
+          <h2 class="main__follow--title">Si vous souhaitez me suivre !</h2>
+          <div class="main__follow--links">
+            <a href="#" class="link">
+              <div class="link__image--github"></div>
+              <div class="link__text">Github</div>
+            </a>
+            <a href="#" class="link">
+              <div class="link__image--linkedin"></div>
+              <div class="link__text">LinkedIn</div>
+            </a>
+            <a href="#" class="link">
+              <div class="link__image--twitter"></div>
+              <div class="link__text">Twitter</div>
+            </a>
+            <a href="#" class="link">
+              <div class="link__image--malt"></div>
+              <div class="link__text">Malt</div>
+            </a>
+            <a href="#" class="link">
+              <div class="link__image--upwork"></div>
+              <div class="link__text">Upwork</div>
+            </a>
+            <a href="#" class="link">
+              <div class="link__image--fiverr"></div>
+              <div class="link__text">Fiverr</div>
+            </a>
+            <a href="#" class="link">
+              <div class="link__image--mail"></div>
+              <div class="link__text">E-mail</div>
+            </a>
+          </div>
+        </section>
+        <section class="main__contact">
+          <h2 class="main__contact--title">Contactez-moi</h2>
+          <label for="email">Votre adresse E-mail :</label>
+          <input class="main__contact--input" type="email" name="" id="email" />
+          <label for="message">Votre message :</label>
+          <textarea
+            class="main__contact--input"
+            name=""
+            id="message"
+            cols="20"
+            rows="10"
+          ></textarea>
+          <input
+            class="main__contact--input"
+            type="submit"
+            value="Envoyer mon message"
+          />
+        </section>
+      </main>
+    </div>
+    <footer class="footer"></footer>
   </body>
 </html>

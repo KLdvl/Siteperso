@@ -1,0 +1,291 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Source+Code+Pro:wght@400;800&display=swap");
+/* reset styles */
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #e4f9f5;
+  font-family: "Source Code Pro", monospace;
+  color: #40514e;
+}
+
+ul,
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* importantion du header */
+.diagonalBox {
+  background-image: linear-gradient(45deg, #30e3ca, #40514e);
+  clip-path: polygon(0 0, 100% 0, 100% 60%, 0 100%);
+  height: 15em;
+}
+
+.header {
+  max-width: 50em;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.header__title {
+  margin-top: 1em;
+  font-weight: 400;
+  color: #e4f9f5;
+}
+.header__text {
+  font-family: "Lobster", cursive;
+  font-size: 2rem;
+  transform: skewY(-2deg);
+  color: #e4f9f5;
+  max-width: 80%;
+}
+
+/* fin du header */
+/* importation du container */
+.main {
+  margin: 5rem auto;
+  display: flex;
+  flex-direction: column;
+  max-width: 75%;
+}
+.main__presentation--title {
+  position: relative;
+  margin-bottom: 0.3em;
+  padding-bottom: 0.2em;
+  text-transform: uppercase;
+}
+.main__presentation--title::after {
+  position: absolute;
+  content: "";
+  width: 5em;
+  border-bottom: 3px solid #11999e;
+  bottom: 0;
+  left: 0;
+}
+.main__presentation--text {
+  text-align: justify;
+}
+.main__realisation {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1em;
+}
+.main__realisation--title {
+  position: relative;
+  margin-bottom: 0.3em;
+  padding-bottom: 0.2em;
+  text-transform: uppercase;
+}
+.main__realisation--title::after {
+  position: absolute;
+  content: "";
+  width: 5em;
+  border-bottom: 3px solid #11999e;
+  bottom: 0;
+  left: 0;
+}
+.main__formation {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1em;
+}
+.main__formation--title {
+  position: relative;
+  margin-bottom: 0.3em;
+  padding-bottom: 0.2em;
+  text-transform: uppercase;
+}
+.main__formation--title::after {
+  position: absolute;
+  content: "";
+  width: 5em;
+  border-bottom: 3px solid #11999e;
+  bottom: 0;
+  left: 0;
+}
+.main__masteries {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1em;
+}
+.main__masteries--title {
+  position: relative;
+  margin-bottom: 0.3em;
+  padding-bottom: 0.2em;
+  text-transform: uppercase;
+}
+.main__masteries--title::after {
+  position: absolute;
+  content: "";
+  width: 5em;
+  border-bottom: 3px solid #11999e;
+  bottom: 0;
+  left: 0;
+}
+.main__masteries--text {
+  text-align: justify;
+}
+.main__masteries--text .strong {
+  color: #11999e;
+}
+.main__follow {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1em;
+}
+.main__follow--title {
+  position: relative;
+  margin-bottom: 0.3em;
+  padding-bottom: 0.2em;
+  text-transform: uppercase;
+}
+.main__follow--title::after {
+  position: absolute;
+  content: "";
+  width: 5em;
+  border-bottom: 3px solid #11999e;
+  bottom: 0;
+  left: 0;
+}
+.main__follow--links {
+  display: flex;
+  justify-content: space-between;
+}
+.main__follow--links .link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main__follow--links .link__image--github {
+  background-image: url(/public/images/Github.png);
+  height: 64px;
+  width: 64px;
+}
+.main__follow--links .link__image--linkedin {
+  background-image: url(/public/images/Linkedin.png);
+  height: 64px;
+  width: 64px;
+}
+.main__follow--links .link__image--twitter {
+  background-image: url(/public/images/Twitter.png);
+  height: 64px;
+  width: 64px;
+}
+.main__follow--links .link__image--malt {
+  background-image: url(/public/images/Malt.png);
+  height: 64px;
+  width: 64px;
+}
+.main__follow--links .link__image--upwork {
+  background-image: url(/public/images/Upwork.png);
+  height: 64px;
+  width: 64px;
+}
+.main__follow--links .link__image--fiverr {
+  background-image: url(/public/images/Fiverr.png);
+  height: 64px;
+  width: 64px;
+}
+.main__follow--links .link__image--mail {
+  background-image: url(/public/images/Mail.png);
+  height: 64px;
+  width: 64px;
+}
+.main__contact {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1em;
+}
+.main__contact--title {
+  position: relative;
+  margin-bottom: 0.3em;
+  padding-bottom: 0.2em;
+  text-transform: uppercase;
+}
+.main__contact--title::after {
+  position: absolute;
+  content: "";
+  width: 5em;
+  border-bottom: 3px solid #11999e;
+  bottom: 0;
+  left: 0;
+}
+.main__contact--input {
+  resize: none;
+  border-radius: 5px;
+  padding: 0.5em;
+}
+.main__contact--input[type=submit] {
+  margin-top: 1em;
+  min-width: 25%;
+  align-self: center;
+  height: 2rem;
+  border-radius: 10px;
+  font-family: "Source Code Pro", monospace;
+  font-weight: 600;
+  background-color: #e4f9f5;
+  color: #11999e;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+}
+.list__item {
+  display: flex;
+  margin-bottom: 0.5em;
+}
+.list__item--date {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  min-width: 7em;
+  color: #11999e;
+}
+.list__item--icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 3.5em;
+  border-right: 1px solid black;
+}
+.list__item--text {
+  margin-left: 1em;
+}
+
+/* fin du container */
+/* importation du footer */
+.footer {
+  position: relative;
+  margin-top: -12em;
+}
+.footer::before {
+  content: "";
+  background-image: linear-gradient(45deg, #30e3ca, #40514e);
+  clip-path: polygon(0 35%, 100% 0%, 100% 100%, 0% 100%);
+  height: 10em;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+/* fin du footer */
+/*importation de composants */
+/* fin de composants */
+
+/*# sourceMappingURL=style.css.map */

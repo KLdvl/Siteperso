@@ -1,0 +1,30 @@
+/* reset styles */
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: $primary;
+  font-family: $font-base;
+  color: $quaternary;
+}
+ul,
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+// .page {
+//   position: relative;
+//   min-height: 100vh;
+// }
+// .wrap {
+//   padding-bottom: 180px;
+// }

@@ -1,0 +1,17 @@
+{
+  "name": "Site MAS Kevin",
+  "version": "1.0.0",
+  "description": "Site de présentation",
+  "main": "index.js",
+  "homepage": "https://kevinmas.com",
+  "scripts": {
+    "sass": "sass --watch ./sass/index.scss:./public/css/style.css",
+    "prefix": "postcss ./public.css/style.css --use autoprefixer -d ./public/css/prefixed/"
+  },
+  "author": "Kevin MAS",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": ""
+  }
+}

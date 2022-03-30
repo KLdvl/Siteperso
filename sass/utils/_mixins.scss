@@ -1,0 +1,20 @@
+@mixin flexcenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin underline {
+  position: relative;
+  margin-bottom: 0.3em;
+  padding-bottom: 0.2em;
+  text-transform: uppercase;
+  &::after {
+    position: absolute;
+    content: "";
+    width: 5em;
+    border-bottom: 3px solid $tertiary;
+    bottom: 0;
+    left: 0;
+  }
+}

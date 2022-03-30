@@ -1,0 +1,146 @@
+.main {
+  margin: 5rem auto;
+  display: flex;
+  flex-direction: column;
+  max-width: 75%;
+  &__presentation {
+    &--title {
+      @include underline;
+    }
+    &--text {
+      text-align: justify;
+    }
+  }
+  &__realisation {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1em;
+    &--title {
+      @include underline;
+    }
+  }
+  &__formation {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1em;
+    &--title {
+      @include underline;
+    }
+  }
+  &__masteries {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1em;
+    &--title {
+      @include underline;
+    }
+    &--text {
+      text-align: justify;
+      .strong {
+        color: $tertiary;
+      }
+    }
+  }
+  &__follow {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1em;
+    &--title {
+      @include underline;
+    }
+    &--links {
+      display: flex;
+      justify-content: space-between;
+      .link {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &__image {
+          &--github {
+            background-image: url(/public/images/Github.png);
+            height: 64px;
+            width: 64px;
+          }
+          &--linkedin {
+            background-image: url(/public/images/Linkedin.png);
+            height: 64px;
+            width: 64px;
+          }
+          &--twitter {
+            background-image: url(/public/images/Twitter.png);
+            height: 64px;
+            width: 64px;
+          }
+          &--malt {
+            background-image: url(/public/images/Malt.png);
+            height: 64px;
+            width: 64px;
+          }
+          &--upwork {
+            background-image: url(/public/images/Upwork.png);
+            height: 64px;
+            width: 64px;
+          }
+          &--fiverr {
+            background-image: url(/public/images/Fiverr.png);
+            height: 64px;
+            width: 64px;
+          }
+          &--mail {
+            background-image: url(/public/images/Mail.png);
+            height: 64px;
+            width: 64px;
+          }
+        }
+      }
+    }
+  }
+
+  &__contact {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1em;
+    &--title {
+      @include underline;
+    }
+    &--input {
+      resize: none;
+      border-radius: 5px;
+      padding: 0.5em;
+      &[type="submit"] {
+        margin-top: 1em;
+        min-width: 25%;
+        align-self: center;
+        height: 2rem;
+        border-radius: 10px;
+        font-family: $font-base;
+        font-weight: 600;
+        background-color: $primary;
+        color: $tertiary;
+      }
+    }
+  }
+}
+.list {
+  display: flex;
+  flex-direction: column;
+  &__item {
+    display: flex;
+    margin-bottom: 0.5em;
+    &--date {
+      display: flex;
+      align-items: center;
+      font-weight: bold;
+      min-width: 7em;
+      color: $tertiary;
+    }
+    &--icon {
+      @include flexcenter;
+      min-width: 3.5em;
+      border-right: 1px solid black;
+    }
+    &--text {
+      margin-left: 1em;
+    }
+  }
+}
